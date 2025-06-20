@@ -1,0 +1,12 @@
+{
+    "Name": "Gift Tastes Make Sense",
+    "Author": "elnfl",
+    "Version": "1.0.0",
+    "Description": "Adds new preferred gifts for characters based on existing dialogue or quests",
+    "UniqueID": "elnfl.GiftTastesMakeSense",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
+

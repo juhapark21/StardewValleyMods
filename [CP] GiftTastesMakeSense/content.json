@@ -1,0 +1,84 @@
+{
+    "Format": "2.7.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Love"],
+                    "Value": "420",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Abigail"],
+                    "Search": "109",
+                    "Value": "109 746 577", 
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Shane"],
+                    "Search": "-79",
+                    "Value": "-79 113", 
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Jas"],
+                    "Search": "233",
+                    "Value": "", 
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Jas"],
+                    "Search": "604",
+                    "Value": "604 233", 
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Leah"],
+                    "Search": "418",
+                    "Value": "418 567",
+                    "Delimiter": " "
+                }, 
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Lewis"],
+                    "Search": "235",
+                    "Value": "235 258", 
+                    "Delimiter": " ",
+                    "When": {
+                    "Season": "summer"
+                    }
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Lewis"],
+                    "Search": "235",
+                    "Value": "235 258", 
+                    "Delimiter": " ",
+                    "When": {
+                    "Season": "spring, fall, winter"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "AcceptGift_(O)567"],
+                    "Value": "Oh! Thank you! This looks perfect for sculpting.",
+                    "Delimiter": " "
+                }
+            ]
+        }
+    ]
+}
