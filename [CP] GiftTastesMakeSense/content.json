@@ -6,12 +6,6 @@
             "Target": "Data/NPCGiftTastes",
             "TextOperations": [
                 {
-                    "Operation": "Append",
-                    "Target": ["Entries", "Universal_Love"],
-                    "Value": "420",
-                    "Delimiter": " "
-                },
-                {
                     "Operation": "ReplaceDelimited",
                     "Target": ["Entries", "Abigail"],
                     "Search": "109",
@@ -45,28 +39,29 @@
                     "Search": "418",
                     "Value": "418 567",
                     "Delimiter": " "
+                },
+                {
+                    "Action": "EditData",
+                    "Target": "Data/NPCGiftTastes",
+                    "Entries": {
+                        "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260 258/Thanks, this is great!/-80 24 88 90 192 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//"
+                    },
+                    "When": {
+                            "Season": "summer"
+                    }
+                },
+                {
+                    "Action": "EditData",
+                    "Target": "Data/NPCGiftTastes",
+                    "Entries": {
+                        "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260/Thanks, this is great!/-80 24 88 90 192 258 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//"
+                    },
+                    "When": {
+                            "Season": "spring, fall, winter"
+                    }
                 }
+
             ]
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "Entries": {
-                "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260 258/Thanks, this is great!/-80 24 88 90 192 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//"
-            },
-            "When": {
-                    "Season": "summer"
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "Entries": {
-                "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260/Thanks, this is great!/-80 24 88 90 192 258 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//"
-            },
-            "When": {
-                    "Season": "spring, fall, winter"
-            }
         },
         {
             "Action": "EditData",
