@@ -18,6 +18,7 @@
 - If the strange bun recipe has been sent by shane in the mail, he will like strange buns after. 
 - Harvey reacts neutrally the first time glasses are gifted, and has special dialogue expressing confusion. Later times, the gift is disliked and he mentions that he has his glasses on him right now. 
 - Add update keys in manifest.json? 
+- Remove testing changes (ie random addition of universally loved gifts)
 - Make a proper readme for the parent folder 
 - Make a proper readme for this folder 
 
@@ -25,3 +26,7 @@
 ## Changes 
 
 ## Adjustments 
+
+
+
+
