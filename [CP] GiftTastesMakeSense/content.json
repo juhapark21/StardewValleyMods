@@ -1,15 +1,22 @@
 {
     "Format": "2.7.0",
     "ConfigSchema": {
-        "ModEnabled": {
+        "Mod Enabled": {
             "AllowValues": "true, false",
             "Default": "true",
-            "Section": "Test Section"
+            "Section": "Enable mod"
         },
-        "Fairy stone": {
-            "AllowValues": "Hate, Dislike, Neutral, Like, Love",
-            "Default": "Like",
-            "Section": "Abigail Preferences"
+        "Abigail likes fairy stones": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
+        },
+        "Abigail likes jack-o-lanterns": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
         }
     }, 
     "Changes": [
@@ -21,8 +28,27 @@
                     "Operation": "ReplaceDelimited",
                     "Target": ["Entries", "Abigail"],
                     "Search": "109",
-                    "Value": "109 746 577", 
-                    "Delimiter": " "
+                    "Value": "109 746", 
+                    "Delimiter": " ",
+                    "When": {
+                        "Mod Enabled": "true",
+                        "Abigail likes jack-o-lanterns": "true"
+                    },
+                    "Update": "OnTimeChange", 
+                    "LogName": "AbigailLikesJackOLanterns"
+                },
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Abigail"],
+                    "Search": "119",
+                    "Value": "119 577", 
+                    "Delimiter": " ", 
+                    "When": {
+                        "Mod Enabled": "true",
+                        "Abigail likes fairy stones": "true"
+                    },
+                    "Update": "OnTimeChange", 
+                    "LogName": "AbigailLikesFairyStones"
                 },
                 {
                     "Operation": "ReplaceDelimited",
