@@ -1,5 +1,17 @@
 {
     "Format": "2.7.0",
+    "ConfigSchema": {
+        "ModEnabled": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Test Section"
+        },
+        "Fairy stone": {
+            "AllowValues": "Hate, Dislike, Neutral, Like, Love",
+            "Default": "Like",
+            "Section": "Abigail Preferences"
+        }
+    }, 
     "Changes": [
         {
             "Action": "EditData",
