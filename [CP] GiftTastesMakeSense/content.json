@@ -73,6 +73,22 @@
         },
         {
             "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Shane"],
+                    "Search": "-79",
+                    "Value": "-79 167", 
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "2118991"
+            }
+        },
+        {
+            "Action": "EditData",
             "Target": "Characters/Dialogue/Leah",
             "TextOperations": [
                 {
