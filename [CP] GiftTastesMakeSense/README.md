@@ -7,9 +7,10 @@
 - Jas loves ice cream instead of liking it.
 - Leah likes marble and has custom dialogue for receiving it as a gift. 
 - Lewis loves blueberries during summer (as it is fresh, in reference to his summer sundays dialogue), and likes them during other seasons.
-- Shane likes Joja cola after his 6-heart event. 
+- Shane likes Joja cola after his 6-heart event (the day after after he agrees to get therapy). 
 
 ## In Progress 
+- Config for each preference? (Might be too much)
 
 ### To-Do  
 - Shane has custom dialogue for gifted beer after his 6-heart event. It is no longer a loved gift. (inspired by other mods)
@@ -19,6 +20,7 @@
 
 ## Notes for myself 
 - Lewis gift preferences have been hardcoded in because I couldn't figure out how to move a preference from like to love depending on season. 
+- For tokens and conditionals to take effect (ex. when using "When" or when taking config options into account), it has to be a _top-level_ change in each Action.  
 
 ## Changes 
 ## Adjustments 

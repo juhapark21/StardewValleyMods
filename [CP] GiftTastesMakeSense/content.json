@@ -5,6 +5,18 @@
             "AllowValues": "true, false",
             "Default": "true",
             "Section": "Enable mod"
+        },
+        "Abigail likes jack-o-lanterns": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
+        },
+        "Abigail likes fairy stones": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
         }
     },
     "Changes": [
@@ -19,15 +31,35 @@
                     "Value": "109 746", 
                     "Delimiter": " ",
                     "LogName": "AbigailLikesJackOLanterns"
-                },
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Abigail likes jack-o-lanterns": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
                 {
-                    "Operation": "ReplaceDelimited",
+                   "Operation": "ReplaceDelimited",
                     "Target": ["Entries", "Abigail"],
                     "Search": "109",
                     "Value": "109 577", 
                     "Delimiter": " ",  
                     "LogName": "AbigailLikesFairyStones"
-                },
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Abigail likes fairy stones": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
                 {
                     "Operation": "ReplaceDelimited",
                     "Target": ["Entries", "Shane"],
