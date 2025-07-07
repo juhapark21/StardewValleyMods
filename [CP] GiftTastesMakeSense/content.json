@@ -30,11 +30,6 @@
                     "Search": "109",
                     "Value": "109 746", 
                     "Delimiter": " ",
-                    "When": {
-                        "Mod Enabled": "true",
-                        "Abigail likes jack-o-lanterns": "true"
-                    },
-                    "Update": "OnTimeChange", 
                     "LogName": "AbigailLikesJackOLanterns"
                 },
                 {
