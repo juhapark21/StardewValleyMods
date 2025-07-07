@@ -1,24 +1,5 @@
 {
     "Format": "2.7.0",
-    "ConfigSchema": {
-        "Mod Enabled": {
-            "AllowValues": "true, false",
-            "Default": "true",
-            "Section": "Enable mod"
-        },
-        "Abigail likes fairy stones": {
-            "AllowValues": "true, false",
-            "Default": "true",
-            "Section": "Character preferences",
-            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
-        },
-        "Abigail likes jack-o-lanterns": {
-            "AllowValues": "true, false",
-            "Default": "true",
-            "Section": "Character preferences",
-            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
-        }
-    }, 
     "Changes": [
         {
             "Action": "EditData",
@@ -37,12 +18,7 @@
                     "Target": ["Entries", "Abigail"],
                     "Search": "109",
                     "Value": "109 577", 
-                    "Delimiter": " ", 
-                    "When": {
-                        "Mod Enabled": "true",
-                        "Abigail likes fairy stones": "true"
-                    },
-                    "Update": "OnTimeChange", 
+                    "Delimiter": " ",  
                     "LogName": "AbigailLikesFairyStones"
                 },
                 {
@@ -50,10 +26,7 @@
                     "Target": ["Entries", "Shane"],
                     "Search": "-79",
                     "Value": "-79 113", 
-                    "Delimiter": " ",
-                    "When": {
-                        "Mod Enabled": "true"
-                    }
+                    "Delimiter": " "
                 },
                 {
                     "Operation": "ReplaceDelimited",
