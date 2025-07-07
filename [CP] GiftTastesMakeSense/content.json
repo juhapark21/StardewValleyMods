@@ -40,8 +40,8 @@
                 {
                     "Operation": "ReplaceDelimited",
                     "Target": ["Entries", "Abigail"],
-                    "Search": "119",
-                    "Value": "119 577", 
+                    "Search": "109",
+                    "Value": "109 577", 
                     "Delimiter": " ", 
                     "When": {
                         "Mod Enabled": "true",
@@ -55,7 +55,10 @@
                     "Target": ["Entries", "Shane"],
                     "Search": "-79",
                     "Value": "-79 113", 
-                    "Delimiter": " "
+                    "Delimiter": " ",
+                    "When": {
+                        "Mod Enabled": "true"
+                    }
                 },
                 {
                     "Operation": "ReplaceDelimited",
