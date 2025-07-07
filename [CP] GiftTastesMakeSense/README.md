@@ -10,10 +10,8 @@
 - Shane likes Joja cola after his 6-heart event (the day after after he agrees to get therapy). 
 
 ## In Progress 
-- Config for each preference? (Might be too much)
 
 ### To-Do  
-- Shane has custom dialogue for gifted beer after his 6-heart event. It is no longer a loved gift. (inspired by other mods)
 - Add update keys in manifest.json? 
 - Make a proper readme for the parent folder 
 - Make a proper readme for this folder 

@@ -10,13 +10,43 @@
             "AllowValues": "true, false",
             "Default": "true",
             "Section": "Character preferences",
-            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
+            "Description": "If left unchecked, Abigail will default to disliking it."
         },
         "Abigail likes fairy stones": {
             "AllowValues": "true, false",
             "Default": "true",
             "Section": "Character preferences",
-            "Description": "If left unchecked, Abigail will default to her vanilla preference of dislike."
+            "Description": "If left unchecked, Abigail will default to disliking it."
+        },
+        "Shane likes chicken statues": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Shane will default to disliking it."
+        },
+        "Shane likes Joja Cola*": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "*After his 6-heart event \nIf left unchecked, Shane will default to hating it regardless of friendship."
+        },
+        "Jas loves ice cream": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Jas will default to liking it."
+        },
+        "Leah likes marble": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Leah will default to disliking it."
+        },
+        "Lewis loves blueberries*": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "*In summer (likes them in other seasons) \nIf left unchecked, Lewis will default to liking it regardless of season."
         }
     },
     "Changes": [
@@ -61,54 +91,92 @@
             "Target": "Data/NPCGiftTastes",
             "TextOperations": [
                 {
-                    "Operation": "ReplaceDelimited",
+                   "Operation": "ReplaceDelimited",
                     "Target": ["Entries", "Shane"],
                     "Search": "-79",
                     "Value": "-79 113", 
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "ReplaceDelimited",
-                    "Target": ["Entries", "Jas"],
-                    "Search": "233",
-                    "Value": "", 
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "ReplaceDelimited",
-                    "Target": ["Entries", "Jas"],
-                    "Search": "604",
-                    "Value": "604 233", 
-                    "Delimiter": " "
-                },
-                {
-                    "Operation": "ReplaceDelimited",
-                    "Target": ["Entries", "Leah"],
-                    "Search": "418",
-                    "Value": "418 567",
-                    "Delimiter": " "
+                    "Delimiter": " ",
+                    "LogName": "ShaneLikesChickenStatues"
                 }
             ],
             "When": {
-                "Mod Enabled": "true"
+                "Mod Enabled": "true",
+                "Shane likes chicken statues": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                   "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Jas"],
+                    "Search": "233",
+                    "Value": "", 
+                    "Delimiter": " ",
+                    "LogName": "JasLovesIceCream-RemoveLike"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Jas loves ice cream": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                   "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Jas"],
+                    "Search": "604",
+                    "Value": "604 233", 
+                    "Delimiter": " ",
+                    "LogName": "JasLovesIceCream-AddLove"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Jas loves ice cream": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                   "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Leah"],
+                    "Search": "418",
+                    "Value": "418 567",
+                    "Delimiter": " ",
+                    "LogName": "LeahLikesMarble"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Leah likes marble": "true"
             }
         },
         {
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260 258/Thanks, this is great!/-80 24 88 90 192 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//"
+                "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260 258/Thanks, this is great!/-80 24 88 90 192 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//",
+                "LogName": "LewisLovesBlueberries-Summer"
             },
             "When": {
                 "Season": "summer",
-                "Mod Enabled": "true"
+                "Mod Enabled": "true",
+                "Lewis loves blueberries*": "true"
             }
         },
         {
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260/Thanks, this is great!/-80 24 88 90 192 258 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//"
+                "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260/Thanks, this is great!/-80 24 88 90 192 258 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//",
+                "LogName": "LewisLikesBlueberries-OtherSeasonsReset"
             },
             "When": {
                 "Season": "spring, fall, winter"
@@ -123,12 +191,14 @@
                     "Target": ["Entries", "Shane"],
                     "Search": "-79",
                     "Value": "-79 167", 
-                    "Delimiter": " "
+                    "Delimiter": " ",
+                    "LogName": "ShaneLikesJojaCola-After6HeartEvent"
                 }
             ],
             "When": {
                 "HasSeenEvent": "2118991",
-                "Mod Enabled": "true"
+                "Mod Enabled": "true",
+                "Shane likes Joja Cola*": "true"
             }
         },
         {
@@ -139,11 +209,13 @@
                     "Operation": "Append",
                     "Target": ["Entries", "AcceptGift_(O)567"],
                     "Value": "Oh! Thank you! This looks perfect for sculpting.",
-                    "Delimiter": " "
+                    "Delimiter": " ",
+                    "LogName": "LeahLikesMarbleDialogue"
                 }
             ],
             "When": {
-                "Mod Enabled": "true"
+                "Mod Enabled": "true",
+                "Leah likes marble": "true"
             }
         }
     ]
