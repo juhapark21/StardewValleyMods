@@ -40,3 +40,18 @@ Expand each preference for the rationale behind the change (may contain spoilers
   <summary> Shane likes Joja Cola after his 6-heart event </summary>
    Shane starts cutting down on alcohol after his 6-heart event, and he has been seen drinking Joja Cola instead (14-heart event). He also loves Joja Cola as a snack in the Movie Theater. 
 </details>
+
+### Why I made this project
+I was sad and confused when I gifted Abigail a fairy stone in my first playthrough and she didn't like it. It's purple (she likes purple) and it's a mineral (she likes minerals)?? 
+
+### What I struggled with 
+- Game logic - making json files didn't seem like much coding at all, until I realized that my changes had to work with the game logic (ie villagers have a confusing gift-receiving algorithm) as well as the mod frameworks themselves (ie conditionals only work with the content patcher at specific spots in the file). Since gaps in how I thought a game mechanic works and the actual mechanic didn't show up as conventional error messages or crashes, it was harder to spot what I was doing wrong.  
+- Since I wasn't using the features of a conventional "language" and moreso learning how to add to other people's code, there was little documentation, also making it harder. 
+
+### What I learned 
+- Test with every change <br>
+  ...otherwise you might have to undo a lot of changes and re-implement them, one small feature at a time. 
+- Don't assume that the same method will work for all variations of what I wanted to make <br> 
+  Even small changes could mean it needs a completely different approach! 
+- VSCode has really nice extensions <br>
+  Text comparison and markdown preview extensions were amazing and saved me many open tabs 
