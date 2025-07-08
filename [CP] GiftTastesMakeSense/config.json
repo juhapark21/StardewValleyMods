@@ -1,10 +1,9 @@
 {
   "Mod Enabled": "true",
-  "Abigail likes jack-o-lanterns": "false",
+  "Abigail likes jack-o-lanterns": "true",
   "Abigail likes fairy stones": "true",
   "Shane likes chicken statues": "true",
-  "Shane likes Joja Cola*": "false",
-  "Jas loves ice cream": "false",
-  "Leah likes marble": "false",
-  "Lewis loves blueberries*": "false"
+  "Shane likes Joja Cola*": "true",
+  "Leah likes marble": "true",
+  "Lewis loves blueberries*": "true"
 }

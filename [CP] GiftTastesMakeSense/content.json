@@ -30,12 +30,6 @@
             "Section": "Character preferences",
             "Description": "*After his 6-heart event \nIf left unchecked, Shane will default to hating it regardless of friendship."
         },
-        "Jas loves ice cream": {
-            "AllowValues": "true, false",
-            "Default": "true",
-            "Section": "Character preferences",
-            "Description": "If left unchecked, Jas will default to liking it."
-        },
         "Leah likes marble": {
             "AllowValues": "true, false",
             "Default": "true",
@@ -102,42 +96,6 @@
             "When": {
                 "Mod Enabled": "true",
                 "Shane likes chicken statues": "true"
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "TextOperations": [
-                {
-                   "Operation": "ReplaceDelimited",
-                    "Target": ["Entries", "Jas"],
-                    "Search": "233",
-                    "Value": "", 
-                    "Delimiter": " ",
-                    "LogName": "JasLovesIceCream-RemoveLike"
-                }
-            ],
-            "When": {
-                "Mod Enabled": "true",
-                "Jas loves ice cream": "true"
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "TextOperations": [
-                {
-                   "Operation": "ReplaceDelimited",
-                    "Target": ["Entries", "Jas"],
-                    "Search": "604",
-                    "Value": "604 233", 
-                    "Delimiter": " ",
-                    "LogName": "JasLovesIceCream-AddLove"
-                }
-            ],
-            "When": {
-                "Mod Enabled": "true",
-                "Jas loves ice cream": "true"
             }
         },
         {
