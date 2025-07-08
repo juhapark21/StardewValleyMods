@@ -4,9 +4,8 @@
     "Version": "1.0.0",
     "Description": "Adds new preferred gifts for characters based on existing in-game context",
     "UniqueID": "elnfl.GiftTastesMakeSense",
-    "UpdateKeys": [],
+    "UpdateKeys": ["Nexus:35436"],
     "ContentPackFor": {
         "UniqueID": "Pathoschild.ContentPatcher"
     }
 }
-

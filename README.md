@@ -1,12 +1,12 @@
 These are my SMAPI/Content Patcher mods for Stardew Valley. 
 
 ## Mods 
-- **Gift Tastes Make More Sense ([source](https://github.com/juhapark21/StardewValleyMods/tree/main/%5BCP%5D%20GiftTastesMakeSense))** <br>
+- **[Gift Tastes Make More Sense](https://www.nexusmods.com/stardewvalley/mods/35436) ([source](https://github.com/juhapark21/StardewValleyMods/tree/main/%5BCP%5D%20GiftTastesMakeSense))** <br>
 Edits some villager gift preferences to align with in-game dialogue and context. 
 
 ## Installation 
 ### Recommended 
-Mods can be installed from **[Nexus Mods](https://www.nexusmods.com/)** (recommended). 
+Mods can be installed from **[Nexus Mods](https://next.nexusmods.com/profile/elnfl/mods)** (recommended). 
 ### Manual 
 Content Patcher mods can also be installed manually: 
 1. Download the mod. 
