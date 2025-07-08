@@ -1,28 +1,42 @@
-# Added Preferences 
+# Gift Tastes Make (More) Sense
+**Gift Tastes Make (More) Sense** is a Stardew Valley mod that adjusts some villager gift preferences to better match in-game context. 
 
-## Tested 
-- Abigail likes jack-o-lanterns (secret note #1). 
-- Abigail likes fairy stones (preference for minerals + purple). 
-- Shane likes chicken statues.
-- Jas loves ice cream instead of liking it.
-- Leah likes marble and has custom dialogue for receiving it as a gift. 
-- Lewis loves blueberries during summer (as it is fresh, in reference to his summer sundays dialogue), and likes them during other seasons.
-- Shane likes Joja cola after his 6-heart event (the day after after he agrees to get therapy). 
+## Installation
+1. Install the latest version of SMAPI.
+2. Install [this mod]() from Nexus mods.
+3. Run the game using SMAPI. <br>
+[The wiki](https://www.stardewvalleywiki.com/Modding:Player_Guide/Getting_Started) has a helpful guide on installation and troubleshooting if you need more help. 
 
-## In Progress 
+## Configuration 
+You can edit the [config.json](https://github.com/juhapark21/StardewValleyMods/blob/main/%5BCP%5D%20GiftTastesMakeSense/config.json) file to toggle each modified preference. <br>
+Using [Generic Mod Config Menu](https://www.nexusmods.com/stardewvalley/mods/5098), you can configure the mod in-game by clicking the cog button on the title screen or by clicking "Mod Options" in the options menu in-game. 
 
-### To-Do  
-- Add update keys in manifest.json? 
-- Make a proper readme for the parent folder 
-- Make a proper readme for this folder 
+## Compatibility 
+Compatible with Stardew Valley 1.6+ on Linux/macOS/Windows. 
 
-## Notes for myself 
-- Lewis gift preferences have been hardcoded in because I couldn't figure out how to move a preference from like to love depending on season. 
-- For tokens and conditionals to take effect (ex. when using "When" or when taking config options into account), it has to be a _top-level_ change in each Action.  
-
-## Changes 
-## Adjustments 
-
-
-
-
+# Modified Preferences
+Expand each preference for the rationale behind the change (may contain spoilers).
+<details>
+  <summary> Abigail likes jack-o-lanterns </summary>
+  Secret note #1 mentions that Abigail loves the smell of carved pumpkin. 
+</details>
+<details>
+  <summary> Abigail likes fairy stones </summary>
+   Abigail likes purple, as well as the occult. Fairy stones are purple and are said to have been made from the bones of ancient fairies, as per an old miner's song. 
+</details>
+<details>
+  <summary> Shane likes chicken statues </summary>
+   Shane likes chickens. 
+</details>
+<details>
+  <summary> Leah likes marble </summary>
+   The item description says marble is "a very popular material for sculptures", and it is rarer/more expensive than other building materials. Leah spends each morning sculpting. 
+</details>
+<details>
+  <summary> Lewis loves blueberries during summer </summary>
+   On summer Sundays, Lewis comments that he enjoys fresh blueberries. 
+</details>
+<details>
+  <summary> Shane likes Joja Cola after his 6-heart event </summary>
+   Shane starts cutting down on alcohol after his 6-heart event, and he has been seen drinking Joja Cola instead (14-heart event). He also loves Joja Cola as a snack in the Movie Theater. 
+</details>
