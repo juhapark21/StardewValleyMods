@@ -1,6 +1,11 @@
 # Gift Tastes Make (More) Sense
 **Gift Tastes Make (More) Sense** is a Stardew Valley mod that adjusts some villager gift preferences to better match in-game context. 
 
+## Demo video 
+https://github.com/user-attachments/assets/6a0c0867-d22b-4d99-a6db-0a4c8ad99736
+
+And if that doesn't work: https://imgur.com/a/mod-demo-video-70iyQ63 
+
 ## Installation
 1. Install the latest version of SMAPI.
 2. Install [this mod](https://www.nexusmods.com/stardewvalley/mods/35436) from Nexus mods.
