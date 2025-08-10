@@ -30,7 +30,19 @@
             "Section": "Character preferences",
             "Description": "*After his 6-heart event \nIf left unchecked, Shane will default to hating it regardless of friendship."
         },
+        "Shane hates beer*": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "*After his 6-heart event \nIf left unchecked, Shane will default to loving it regardless of friendship."
+        },
         "Leah likes marble": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Leah will default to disliking it."
+        },
+        "Leah likes hardwood": {
             "AllowValues": "true, false",
             "Default": "true",
             "Section": "Character preferences",
@@ -119,6 +131,24 @@
         {
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                   "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Leah"],
+                    "Search": "418",
+                    "Value": "418 709",
+                    "Delimiter": " ",
+                    "LogName": "LeahLikesHardwood"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Leah likes hardwood": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
             "Entries": {
                 "Lewis": "Wow, this is my favorite! Thank you!/200 208 235 614 260 258/Thanks, this is great!/-80 24 88 90 192 264 272 274 278 258/Well, I guess it's the thought that counts.../-6 16 330/This makes me sick. What a horrendous gift./80/That's very nice of you. Thanks.//",
                 "LogName": "LewisLovesBlueberries-Summer"
@@ -161,6 +191,44 @@
         },
         {
             "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Shane"],
+                    "Search": "346/This",
+                    "Value": "/This",
+                    "Delimiter": " ",
+                    "LogName": "ShaneHatesBeer-After6HeartEvent"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "2118991",
+                "Mod Enabled": "true",
+                "Shane hates beer*": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Shane"],
+                    "Search": "garbage?/80",
+                    "Value": "garbage?/80 346", 
+                    "Delimiter": " ",
+                    "LogName": "ShaneHatesBeer-After6HeartEvent"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "2118991",
+                "Mod Enabled": "true",
+                "Shane hates beer*": "true"
+            }
+        },
+        {
+            "Action": "EditData",
             "Target": "Characters/Dialogue/Leah",
             "TextOperations": [
                 {
@@ -174,6 +242,40 @@
             "When": {
                 "Mod Enabled": "true",
                 "Leah likes marble": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "AcceptGift_(O)709"],
+                    "Value": "Oh! Thank you! This looks perfect for carving.",
+                    "Delimiter": " ",
+                    "LogName": "LeahLikesHardwoodDialogue"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Leah likes hardwood": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "AcceptGift_(O)346"],
+                    "Value": "Seriously, @? Who do you take me for? #$b# I thought we were past this.",
+                    "Delimiter": " ",
+                    "LogName": "ShaneHatesBeerDialogue-After6HeartsEvent"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Shane hates beer*": "true"
             }
         }
     ]
