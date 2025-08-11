@@ -104,24 +104,6 @@
             "TextOperations": [
                 {
                    "Operation": "ReplaceDelimited",
-                    "Target": ["Entries", "Willy"],
-                    "Search": "340",
-                    "Value": "340 717", 
-                    "Delimiter": " ",
-                    "LogName": "WillyLikesCrabs"
-                }
-            ],
-            "When": {
-                "Mod Enabled": "true",
-                "Willy likes crabs": "true"
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/NPCGiftTastes",
-            "TextOperations": [
-                {
-                   "Operation": "ReplaceDelimited",
                     "Target": ["Entries", "Shane"],
                     "Search": "-79",
                     "Value": "-79 113", 
@@ -292,7 +274,7 @@
                 {
                     "Operation": "Append",
                     "Target": ["Entries", "AcceptGift_(O)346"],
-                    "Value": "Seriously, @? Who do you take me for? #$b# I thought we were past this.",
+                    "Value": "Seriously, @? Who do you take me for? $a #$b# I thought we were past this. $s",
                     "Delimiter": " ",
                     "LogName": "ShaneHatesBeerDialogue-After6HeartsEvent"
                 }
@@ -300,6 +282,24 @@
             "When": {
                 "Mod Enabled": "true",
                 "Shane hates beer*": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                   "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Willy"],
+                    "Search": "340",
+                    "Value": "340 717", 
+                    "Delimiter": " ",
+                    "LogName": "WillyLikesCrabs"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Willy likes crabs": "true"
             }
         }
     ]
