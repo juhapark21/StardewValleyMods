@@ -53,6 +53,12 @@
             "Default": "true",
             "Section": "Character preferences",
             "Description": "*In summer (likes them in other seasons) \nIf left unchecked, Lewis will default to liking it regardless of season."
+        },
+        "Willy likes crabs": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Section": "Character preferences",
+            "Description": "If left unchecked, Willy will default to being neutral towards it."
         }
     },
     "Changes": [
@@ -90,6 +96,24 @@
             "When": {
                 "Mod Enabled": "true",
                 "Abigail likes fairy stones": "true"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                   "Operation": "ReplaceDelimited",
+                    "Target": ["Entries", "Willy"],
+                    "Search": "340",
+                    "Value": "340 717", 
+                    "Delimiter": " ",
+                    "LogName": "WillyLikesCrabs"
+                }
+            ],
+            "When": {
+                "Mod Enabled": "true",
+                "Willy likes crabs": "true"
             }
         },
         {

@@ -50,12 +50,12 @@ Expand each preference for the rationale behind the change (may contain spoilers
    Shane starts cutting down on alcohol after his 6-heart event, and he has been seen drinking Joja Cola instead (14-heart event). He also loves Joja Cola as a snack in the Movie Theater. 
 </details>
 <details>
-  <summary> Shane hates Beer after his 6-heart event </summary>
-   Shane starts cutting down on alcohol after his 6-heart event, and he has been seen actively trying to avoid alcohol. The farmer helped Shane get help for his alcoholism as well.  
+  <summary> Shane hates beer after his 6-heart event </summary>
+   Shane starts cutting down on alcohol after his 6-heart event, and he has been seen actively trying to avoid alcohol. The farmer helps Shane get help for his alcoholism as well.  
 </details>
 <details>
   <summary> Willy likes crabs </summary>
-   Willy calls the player a "fellow crab enthusiast" and gives a gift if the player has filled a fish pond with 10 crabs. 
+   Willy calls the player a "fellow crab enthusiast" and gives a gift if the player has filled a fish pond with 10 crabs. Willy also loves "The Art O' Crabbing" as a gift.
 </details>
 
 ### Why I made this project
